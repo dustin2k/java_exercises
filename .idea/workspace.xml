@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdd3460-a0bc-4a9a-a7b9-8bfc987017a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ADF_1_LAB_2/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ADF_1_LAB_2/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ADF_LAB_1/Fibonacci/Fibonacci.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ADF_LAB_1/META-INF/ADF_LAB_1.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/java/ADF_1_E1/BaseString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/ADF_1_E1/BaseString.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/java/ADF_1_E1/MyString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/ADF_1_E1/MyString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/ADF_1_LAB_2/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/ADF_1_LAB_2/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/ADF_1_LAB_2/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/ADF_1_LAB_2/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java/ADF_1_LAB_2/_Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/ADF_1_LAB_2/_Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/java/Fibonacci/Fibonacci.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/Fibonacci/Fibonacci.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/java/test/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/test/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ADF_1_E1/BaseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADF_1_E1/BaseString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ADF_1_E1/MyString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADF_1_E1/MyString.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +24,7 @@
     <option name="done" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -35,6 +33,45 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="32">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+                <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#792#793#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADF_1_LAB_2/_Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ADF_1_E1/MyString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ADF_1_E1/BaseString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -48,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Fibonacci/Fibonacci.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="416">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -74,13 +111,20 @@
       <list>
         <option value="$PROJECT_DIR$/src/Fibonacci/Fibonacci.java" />
         <option value="$PROJECT_DIR$/src/test/test.java" />
-        <option value="$PROJECT_DIR$/src/ADF_1_E1/MyString.java" />
+        <option value="$PROJECT_DIR$/src/ADF_1_LAB_2/_Main.java" />
         <option value="$PROJECT_DIR$/src/ADF_1_E1/BaseString.java" />
+        <option value="$PROJECT_DIR$/src/ADF_1_E1/MyString.java" />
       </list>
     </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="580" />
+    <option name="y" value="200" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -100,6 +144,12 @@
               <item name="java" type="b2602c69:ProjectViewProjectNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ADF_1_E1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java" type="b2602c69:ProjectViewProjectNode" />
@@ -146,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application._Main">
+  <component name="RunManager" selected="Application.MyString">
     <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fibonacci.Fibonacci" />
       <module name="java" />
@@ -201,9 +251,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyString" />
         <item itemvalue="Application._Main" />
         <item itemvalue="Application.Fibonacci" />
-        <item itemvalue="Application.MyString" />
         <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
@@ -219,17 +269,19 @@
       <option name="presentableId" value="Default" />
       <updated>1564981872461</updated>
       <workItem from="1564981883235" duration="2301000" />
-      <workItem from="1565018461350" duration="223000" />
+      <workItem from="1565018461350" duration="460000" />
+      <workItem from="1565099439789" duration="824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2524000" />
+    <option name="totallyTimeSpent" value="3585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0981717" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09896661" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -238,7 +290,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2673031" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2673031" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -265,24 +317,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ADF_1_E1/MyString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ADF_1_E1/BaseString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="e#86#87#0" expanded="true" />
-            <element signature="e#110#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -298,6 +332,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -310,10 +356,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Fibonacci/Fibonacci.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="416">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADF_1_LAB_2/_Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADF_1_E1/BaseString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ADF_1_E1/MyString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

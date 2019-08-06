@@ -1,7 +1,9 @@
 package ADF_1_E1;
 
+import java.util.regex.*;
+
 public class BaseString {
-    String _str;
+    private String _str;
     BaseString(String a){
         _str = a;
     }
@@ -14,9 +16,19 @@ public class BaseString {
     public int countWord(){
         if(_str == null || _str.isEmpty()) return 0;
         else{
-            String[] words = _str.split("\\s+");
-            return words.length;
+            Matcher m = Pattern.compile("\\s").matcher(_str);
+            int count = 1;
+            while(m.find()){
+                count++;
+            }
+            return count;
         }
+    }
+    public void standardizeString(){
+        Matcher m = Pattern.compile("\\s\\s+").matcher(_str);
+        _str = m.replaceAll(" ");
+        Matcher _m = Pattern.compile("^\\s+").matcher(_str);
+        _str = _m.replaceAll("");
     }
     public void displayUpperCase(){
         char[] characters = _str.toCharArray();
