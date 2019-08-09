@@ -13,14 +13,14 @@ class _Main{
         System.out.println("Working years: " + (date.getYear() - e.getStartingYear()));
         System.out.println("National Insurance Number: " + e.getNational_insurance_number());
         String str = "testst12321ring abcs12313tring";
-        Matcher m = Pattern.compile("[a-z]*").matcher(str);
+        Matcher m = Pattern.compile("test").matcher(str);
         int i = 0;
-        String[] a = {};
+        // String[] a = {};
         while(m.find()){
 //            a[i] = m.group();
 //            i++;
-            System.out.print(m.group() + " ");
+            System.out.println(m.groupCount());
         }
-//        System.out.println(a[0].toString());
+
     }
 }

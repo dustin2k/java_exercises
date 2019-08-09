@@ -29,6 +29,8 @@ public class BaseString {
         _str = m.replaceAll(" ");
         Matcher _m = Pattern.compile("^\\s+").matcher(_str);
         _str = _m.replaceAll("");
+        Matcher __m = Pattern.compile("\\s+$").matcher(_str);
+        _str = __m.replaceAll("");
     }
     public void displayUpperCase(){
         char[] characters = _str.toCharArray();
