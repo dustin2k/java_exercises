@@ -2,6 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdd3460-a0bc-4a9a-a7b9-8bfc987017a1" name="Default Changelist" comment="">
+<<<<<<< HEAD
+=======
+      <change afterPath="$PROJECT_DIR$/src/Algorithm_excercise/pyramid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm_excercise/random_number.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm_excercise/square_print.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_student_management/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_student_management/GradeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_student_management/Mark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_student_management/MarkException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_student_management/Students.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception_student_management/Subject.java" afterDir="false" />
+>>>>>>> c5162aa8e1420be4b45bc40662b29532406f87f2
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/java/exeception_design/test_exception.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/exeception_design/test_exception.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/exeception_design/test_exception.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exeception_design/test_exception.java" afterDir="false" />
@@ -141,6 +153,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Algorithm_excercise" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -153,13 +170,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test_exception">
-    <configuration name="MyString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ADF_1_E1.MyString" />
+  <component name="RunManager" selected="Application.Exam">
+    <configuration name="Exam" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exception_student_management.Exam" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ADF_1_E1.*" />
+          <option name="PATTERN" value="Exception_student_management.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,12 +184,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ADF_1_LAB_2._Main" />
+    <configuration name="pyramid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm_excercise.pyramid" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ADF_1_LAB_2.*" />
+          <option name="PATTERN" value="Algorithm_excercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,12 +197,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="array_exception" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array_exception_test.array_exception" />
+    <configuration name="random_number" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm_excercise.random_number" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array_exception_test.*" />
+          <option name="PATTERN" value="Algorithm_excercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,12 +210,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.test" />
+    <configuration name="square_print" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm_excercise.square_print" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="Algorithm_excercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -221,11 +238,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Exam" />
+        <item itemvalue="Application.random_number" />
+        <item itemvalue="Application.pyramid" />
+        <item itemvalue="Application.square_print" />
         <item itemvalue="Application.test_exception" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.array_exception" />
-        <item itemvalue="Application.MyString" />
-        <item itemvalue="Application._Main" />
       </list>
     </recent_temporary>
   </component>
