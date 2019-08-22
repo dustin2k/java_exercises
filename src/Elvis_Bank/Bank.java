@@ -63,7 +63,7 @@ public class Bank {
         id = -(int) date.getTime();
         Account acc = new Account(username, id, balance);
         try {
-            FileOutputStream f = new FileOutputStream(new File("account.txt"), true);
+            FileOutputStream f = new FileOutputStream("account.txt", true);
             ObjectOutputStream o = new ObjectOutputStream(f);
             o.writeObject(acc);
             o.close();
@@ -75,26 +75,22 @@ public class Bank {
 
     void listAccount() {
         try {
-            FileInputStream f = new FileInputStream(new File("account.txt"));
-            // ArrayList<Account> arr = new ArrayList<Account>();
+            FileInputStream f = new FileInputStream("account.txt");
             while (true) {
                 try {
                     ObjectInputStream o = new ObjectInputStream(f);
                     Account acc = (Account) o.readObject();
-                    // arr.add(acc);
                     System.out.println(acc.getAccountNumber() + " " + acc.getCustomerName() + " " + acc.getBalance());
                 } catch (EOFException e) {
                     break;
                 }
             }
             f.close();
-            // for (Account account : arr) {
-            //     System.out.println(account.getAccountNumber());
-            // }
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
         } catch (IOException e) {
-            System.out.println("Error initializing stream");
+            //            System.out.println("Error initializing stream");
+            System.out.println(e);
         } catch (ClassNotFoundException e) {
             System.out.println(e);
         }
@@ -103,45 +99,80 @@ public class Bank {
     void withdraw(int accountNumber, double amount) throws accountNumberException, balanceException {
         try {
             int flag = 0;
-            FileInputStream f = new FileInputStream(new File("account.txt"));
+            FileInputStream fi = new FileInputStream(new File("account.txt"));
             ArrayList < Account > arr_account = new ArrayList < Account > ();
             while (true) {
                 try {
-                    ObjectInputStream o = new ObjectInputStream(f);
-                    Account acc = (Account) o.readObject();
+                    ObjectInputStream oi = new ObjectInputStream(fi);
+                    Account acc = (Account) oi.readObject();
                     arr_account.add(acc);
                     if (acc.getAccountNumber() == accountNumber) {
-                        if (acc.getBalance() < amount) throw new balanceException();
+                        if (acc.getBalance() < amount) throw new balanceException("Not enough in balance");
                         else {
                             System.out.println("OK");
                         }
                         flag = 1;
                     }
-                    //                    System.out.println(acc.getAccountNumber());
                 } catch (EOFException e) {
                     break;
                 }
             }
-            f.close();
-            if (flag == 0) throw new accountNumberException();
-            else{
+            fi.close();
+            if (flag == 0) throw new accountNumberException("Account number not found");
+            else {
                 FileOutputStream fo = new FileOutputStream(new File("account.txt"));
-                ObjectOutputStream o = new ObjectOutputStream(fo);
-                for(int i = 0; i < arr_account.size(); i++) {
-                    if (arr_account.get(i).getAccountNumber() == accountNumber) {
-                        String _name = arr_account.get(i).getCustomerName();
-                        double _balance = arr_account.get(i).getBalance() - amount;
-                        Account acc = new Account(_name, accountNumber, _balance);
-                        arr_account.set(i, acc);
-                        o.writeObject(arr_account.get(i));
-                    } else o.writeObject(arr_account.get(i));
+                for (Account acc: arr_account) {
+                    ObjectOutputStream oo = new ObjectOutputStream(fo);
+                    if (acc.getAccountNumber() == accountNumber) {
+                        Account _acc = new Account(acc.getCustomerName(), acc.getAccountNumber(), acc.getBalance() - amount);
+                        oo.writeObject(_acc);
+                    } else oo.writeObject(acc);
                 }
                 fo.close();
             }
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
         } catch (IOException e) {
-            System.out.println("Error initializing stream");
+            System.out.println(e);
+        } catch (ClassNotFoundException e) {
+            System.out.println(e);
+        }
+    }
+
+    void deposit(int accountNumber, double amount) throws accountNumberException {
+        try {
+            int flag = 0;
+            FileInputStream fi = new FileInputStream("account.txt");
+            ArrayList < Account > arr_account = new ArrayList < Account > ();
+            while (true) {
+                try{
+                    ObjectInputStream oi = new ObjectInputStream(fi);
+                    Account acc = (Account) oi.readObject();
+                    arr_account.add(acc);
+                    if(acc.getAccountNumber() == accountNumber) {
+                        flag = 1;
+                    }
+                } catch(EOFException e) {
+                    break;
+                }
+            }
+            fi.close();
+            if(flag == 0) throw new accountNumberException("Account number not found");
+            else {
+                FileOutputStream fo = new FileOutputStream("account.txt");
+                for(Account acc: arr_account) {
+                    ObjectOutputStream oo = new ObjectOutputStream(fo);
+                    if(acc.getAccountNumber() == accountNumber) {
+                        Account _acc = new Account(acc.getCustomerName(), acc.getAccountNumber(), acc.getBalance() + amount);
+                        oo.writeObject(_acc);
+                    } else oo.writeObject(acc);
+                }
+                fo.close();
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+        } catch (IOException e) {
+            System.out.println(e);
         } catch (ClassNotFoundException e) {
             System.out.println(e);
         }
