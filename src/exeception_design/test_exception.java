@@ -59,10 +59,10 @@ public class test_exception {
                 per.drinkCoffee(cup);
                 System.out.println("Perfect");
             } catch (TemperatureException e) {
-                System.out.println(e.getMsg());
+                System.out.println(e.getCause().getMessage());
             }
                 do {
-                    System.out.println("Continue (yes/no): ");
+                    System.out.print("Continue (yes/no): ");
                     choice = input.next();
                 } while (!choice.toLowerCase().equals("yes") && !choice.toLowerCase().equals("y") && !choice.toLowerCase().equals("no") && !choice.toLowerCase().equals("n"));
 
