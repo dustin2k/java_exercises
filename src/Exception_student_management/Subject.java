@@ -2,9 +2,9 @@ package Exception_student_management;
 
 public class Subject {
     String sjName;
-    float w;
+    Double w;
 
-    Subject(String _sjName, float _w){
+    Subject(String _sjName, Double _w){
         sjName = _sjName;
         w = _w;
     }

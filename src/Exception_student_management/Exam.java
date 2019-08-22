@@ -28,16 +28,16 @@ public class Exam {
         input.nextLine();
         Subject[] subject = new Subject[n];
         Mark[] mark = new Mark[n];
-        float w_total = 0;
+        double w_total = 0;
         for(int i = 0; i < n; i++){
             String sj;
             System.out.print("Enter subject " + (i + 1) + " name: ");
             sj = input.nextLine();
-            float w;
+            double w;
             System.out.print("Enter subject " + (i + 1) + " coefficient: ");
             do{
                 try{
-                    w = input.nextFloat();
+                    w = input.nextDouble();
                     input.nextLine();
                     w_total += w;
                     break;
@@ -47,11 +47,11 @@ public class Exam {
                     System.out.print("Error, try again: ");
                 }
             }while(true);
-            float m;
+            double m;
             System.out.print("Enter subject's mark: ");
             do{
                 try{
-                    m = input.nextFloat();
+                    m = input.nextDouble();
                     input.nextLine();
                     break;
                 }
@@ -79,7 +79,7 @@ public class Exam {
         input.close();
         double T1 = 0;
         for(int i = 0; i < n; i++){
-            T1 += (double)(mark[i].m * subject[i].w * (1 + (double)(mark[i].bonus / 100))) / w_total;
+            T1 += (double)(mark[i].m * subject[i].w * (1 + mark[i].bonus / 100)) / w_total;
         }
         System.out.println(stu.getFullName());
         System.out.println(stu.getSid());

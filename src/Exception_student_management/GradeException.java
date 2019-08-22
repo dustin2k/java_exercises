@@ -1,4 +1,4 @@
-package Exception_student_management;
+// package Exception_student_management;
 
-public class GradeException extends Exception {
-}
+// public class GradeException extends Exception {
+// }

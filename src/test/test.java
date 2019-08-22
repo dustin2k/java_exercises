@@ -1,22 +1,41 @@
 package test;
 
-import java.util.regex.*;
+import java.io.*;
 
-public class test {
-    String _str;
-    test(String a){
-        _str = a;
+public class test extends ObjectOutputStream {
+
+    public test(OutputStream out) throws IOException {
+        super(out);
     }
 
     public static void main(String[] args) {
-        String str = "This is a test string with number 12345 and UPPERCASE";
-        Matcher m = Pattern.compile("([0-9]*)([A-Z])").matcher(str);
-        int count = 0;
-        while(m.find()){
-            count++;
-            System.out.print(m.group() + " ");
+        Object s = "Bye World!";
+        Object s2 = "Hello World!";
+        try {
+            // create a new file with an ObjectOutputStream
+            FileOutputStream out = new FileOutputStream("test.txt");
+            test oout = new test(out);
+
+            // write something in the file
+            oout.writeObject(s);
+            oout.flush();
+
+            // enable object replacing
+            oout.enableReplaceObject(true);
+
+            // replace object
+            System.out.println("" + oout.replaceObject(s2));
+
+            // close the stream
+            oout.close();
+
+            // create an ObjectInputStream for the file we created before
+            ObjectInputStream ois = new ObjectInputStream(new FileInputStream("test.txt"));
+
+            // read and print an int
+            System.out.println("" + (String) ois.readObject());
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
-        System.out.println();
-        System.out.println(count);
     }
 }
